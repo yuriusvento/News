@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daily Priority — ежедневный независимый новостной обзор.">
+  <title>Daily Priority</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="./">Daily Priority<span>.</span></a>
+    <div class="header-meta"><span>Независимый новостной обзор</span><span>10 августа 2026</span></div>
+  </header>
+  <nav class="section-nav" aria-label="Разделы новостей">
+    <button class="active" data-section="Все">Все</button>
+    <button data-section="Мир">Мир</button>
+    <button data-section="Общество">Общество</button>
+    <button data-section="Наука">Наука</button>
+    <button data-section="Технологии">Технологии</button>
+    <button data-section="Культура">Культура</button>
+  </nav>
+  <main>
+    <section class="lead">
+      <div class="issue-label"><span>Выпуск 01</span><span>Опубликован</span></div>
+      <h1>Новости, которые<br>определяют день.</h1>
+      <p>Ежедневный отбор значимых событий без информационного шума. Факты, контекст и прямые ссылки на источники.</p>
+      <a class="lead-link" href="./issues/2026-08-10/">Читать выпуск <span>↗</span></a>
+    </section>
+    <section class="briefing-head"><p>Сегодня в обзоре</p><div><span id="story-count">05</span><small>тематических<br>направлений</small></div></section>
+    <section class="news-grid" id="news-grid">
+      <article class="news-card" data-section="Культура"><div class="card-top"><span>Культура</span><span>01</span></div><h2>AI-кино получает собственную фестивальную инфраструктуру</h2><p>Astana AI Film Festival объявил призовой фонд $1 млн и продлил приём работ до 31 августа.</p><a class="pending" href="./issues/2026-08-10/#story-1">Читать в выпуске →</a></article>
+      <article class="news-card" data-section="Общество"><div class="card-top"><span>Общество</span><span>02</span></div><h2>Разнообразию знаний нужна связанная сеть</h2><p>Исследование показывает, как структура сотрудничества определяет коллективный интеллект.</p><a class="pending" href="./issues/2026-08-10/#story-2">Читать в выпуске →</a></article>
+      <article class="news-card" data-section="Технологии"><div class="card-top"><span>Технологии</span><span>03</span></div><h2>AI-контент выходит в непрерывный эфир</h2><p>Fairground запускает отдельный FAST-канал для произведений, созданных с помощью AI.</p><a class="pending" href="./issues/2026-08-10/#story-3">Читать в выпуске →</a></article>
+      <article class="news-card" data-section="Мир"><div class="card-top"><span>Мир</span><span>04</span></div><h2>Парапланерный старт в Андрадасе</h2><p>В Минас-Жерайс готовится второй этап Campeonato Paranaense de Parapente 2026.</p><a class="pending" href="./issues/2026-08-10/#story-4">Читать в выпуске →</a></article>
+      <article class="news-card" data-section="Наука"><div class="card-top"><span>Наука</span><span>05</span></div><h2>Августовское небо: затмения, Персеиды и Венера</h2><p>NASA собрала главные астрономические события месяца в одном календаре.</p><a class="pending" href="./issues/2026-08-10/#story-5">Читать в выпуске →</a></article>
+    </section>
+    <section class="principles"><p class="eyebrow">Редакционный принцип</p><blockquote>Не больше новостей.<br>Больше ясности.</blockquote><div class="principle-grid"><p><b>Отбор</b><span>Только события, имеющие последствия и долгосрочное значение.</span></p><p><b>Контекст</b><span>Почему это произошло и что может измениться дальше.</span></p><p><b>Источники</b><span>Ссылки на документы, исследования и надёжные публикации.</span></p></div></section>
+    <section class="archive"><div><p class="eyebrow">Архив</p><h2>Все выпуски<br>в одном месте.</h2></div><p><a href="./issues/2026-08-10/"><b>Выпуск 01</b><br>10 августа 2026 →</a></p></section>
+  </main>
+  <footer><a class="brand footer-brand" href="./">Daily Priority<span>.</span></a><p>Ежедневный новостной обзор<br>На русском языке</p><p>© 2026 Daily Priority</p></footer>
+  <script src="./script.js"></script>
+</body>
+</html>
