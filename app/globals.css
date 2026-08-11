@@ -32,6 +32,7 @@ button { font:inherit; }
 .news-card h2 { margin:auto 0 18px; font-size:clamp(2rem,3.3vw,3.8rem); line-height:.95; letter-spacing:-.06em; }
 .news-card p { min-height:64px; max-width:410px; font-size:14px; line-height:1.5; }
 .pending { padding-top:14px; border-top:1px solid var(--line); font:10px var(--font-mono),monospace; text-transform:uppercase; opacity:.55; }
+.pending:hover { opacity:1; }
 .principles { padding:7vw 3vw; background:var(--ink); color:var(--paper); }
 .principles blockquote { margin:5vw 0; font-size:clamp(4rem,9vw,9rem); line-height:.82; letter-spacing:-.07em; font-weight:680; }
 .principle-grid { margin-left:33%; display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
@@ -46,6 +47,18 @@ footer { padding:55px 3vw 30px; display:grid; grid-template-columns:2fr 1fr 1fr;
 .footer-brand { font-size:clamp(2.5rem,6vw,6rem); }
 footer p { margin:0; font:11px/1.5 var(--font-mono),monospace; text-transform:uppercase; }
 footer p:last-child { text-align:right; }
+.issue-masthead { background:var(--paper); }
+.issue-hero { padding:38px 3vw 6vw; background:var(--red); border-bottom:1px solid var(--ink); }
+.back-link { display:inline-block; margin-bottom:7vw; font:11px var(--font-mono),monospace; text-transform:uppercase; }
+.issue-hero h1 { margin:30px 0; font-size:clamp(4rem,10vw,10rem); line-height:.8; letter-spacing:-.075em; }
+.issue-deck { max-width:670px; margin:0 0 0 50%; font-size:clamp(1.1rem,1.7vw,1.5rem); line-height:1.45; }
+.story { display:grid; grid-template-columns:1fr 3fr; padding:4vw 3vw 6vw; border-bottom:1px solid var(--ink); }
+.story-meta { display:flex; gap:24px; font:11px var(--font-mono),monospace; text-transform:uppercase; }
+.story-meta span:first-child { font-size:2rem; font-weight:700; line-height:.8; }
+.story-body { max-width:900px; }
+.story-body h2 { margin:0 0 48px; font-size:clamp(2.8rem,5.5vw,6rem); line-height:.92; letter-spacing:-.06em; }
+.story-body p { max-width:760px; font-size:18px; line-height:1.6; }
+.story-body a { display:inline-block; margin-top:30px; border-bottom:1px solid var(--ink); padding-bottom:5px; font:11px var(--font-mono),monospace; text-transform:uppercase; }
 @media(max-width:800px){
   .masthead { min-height:95px; display:block; }
   .brand { font-size:3.2rem; }
@@ -61,5 +74,9 @@ footer p:last-child { text-align:right; }
   .archive { grid-template-columns:1fr; }
   footer { grid-template-columns:1fr; gap:36px; }
   footer p:last-child { text-align:left; }
+  .issue-deck { margin-left:0; }
+  .story { grid-template-columns:1fr; gap:55px; padding:45px 5vw 70px; }
+  .story-body h2 { margin-bottom:35px; }
+  .story-body p { font-size:16px; }
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
