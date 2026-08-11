@@ -5,11 +5,11 @@ import { useMemo, useState } from "react";
 const sections = ["Все", "Мир", "Общество", "Наука", "Технологии", "Культура"];
 
 const desk = [
-  { section: "Мир", title: "Главные события дня", text: "Коротко о событиях, которые влияют на международную повестку." },
-  { section: "Общество", title: "Люди и общество", text: "Социальные изменения, исследования и решения, касающиеся повседневной жизни." },
-  { section: "Наука", title: "Наука и открытия", text: "Новые исследования и открытия — ясно, точно и со ссылками на первоисточники." },
-  { section: "Технологии", title: "Технологии", text: "Развитие искусственного интеллекта, энергетики, связи и цифровой среды." },
-  { section: "Культура", title: "Культура", text: "Кино, литература, искусство и идеи, формирующие современность." },
+  { section: "Культура", title: "AI-кино получает собственную фестивальную инфраструктуру", text: "Astana AI Film Festival объявил призовой фонд $1 млн и продлил приём работ до 31 августа." },
+  { section: "Общество", title: "Разнообразию знаний нужна связанная сеть", text: "Исследование показывает, как структура сотрудничества определяет коллективный интеллект." },
+  { section: "Технологии", title: "AI-контент выходит в непрерывный эфир", text: "Fairground запускает отдельный FAST-канал для произведений, созданных с помощью AI." },
+  { section: "Мир", title: "Парапланерный старт в Андрадасе", text: "В Минас-Жерайс готовится второй этап Campeonato Paranaense de Parapente 2026." },
+  { section: "Наука", title: "Августовское небо: затмения, Персеиды и Венера", text: "NASA собрала главные астрономические события месяца в одном календаре." },
 ];
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
     <main>
       <header className="masthead">
         <a className="brand" href="#top" aria-label="Daily Priority — на главную">Daily Priority<span>.</span></a>
-        <div className="header-meta"><span>Независимый новостной обзор</span><span>11 августа 2026</span></div>
+        <div className="header-meta"><span>Независимый новостной обзор</span><span>10 августа 2026</span></div>
       </header>
 
       <nav className="section-nav" aria-label="Разделы новостей">
@@ -33,10 +33,10 @@ export default function Home() {
       </nav>
 
       <section id="top" className="lead">
-        <div className="issue-label"><span>Выпуск 01</span><span>Готовится к публикации</span></div>
+        <div className="issue-label"><span>Выпуск 01</span><span>Опубликован</span></div>
         <h1>Новости, которые<br />определяют день.</h1>
         <p>Ежедневный отбор значимых событий без информационного шума. Факты, контекст и прямые ссылки на источники.</p>
-        <a className="lead-link" href="#briefing">Перейти к обзору <span>↘</span></a>
+        <a className="lead-link" href="/issues/2026-08-10">Читать выпуск <span>↗</span></a>
       </section>
 
       <section id="briefing" className="briefing-head">
@@ -50,7 +50,7 @@ export default function Home() {
             <div className="card-top"><span>{item.section}</span><span>{String(index + 1).padStart(2, "0")}</span></div>
             <h2>{item.title}</h2>
             <p>{item.text}</p>
-            <div className="pending">Материалы появятся в первом выпуске</div>
+            <a className="pending" href="/issues/2026-08-10">Читать в выпуске →</a>
           </article>
         ))}
       </section>
@@ -67,7 +67,7 @@ export default function Home() {
 
       <section className="archive">
         <div><p className="eyebrow">Архив</p><h2>Все выпуски<br />в одном месте.</h2></div>
-        <p>Архив будет пополняться по мере выхода новых ежедневных обзоров. Каждый выпуск сохранит собственную дату и постоянную ссылку.</p>
+        <p><a href="/issues/2026-08-10"><b>Выпуск 01</b><br />10 августа 2026 →</a></p>
       </section>
 
       <footer><a className="brand footer-brand" href="#top">Daily Priority<span>.</span></a><p>Ежедневный новостной обзор<br />На русском языке</p><p>© 2026 Daily Priority</p></footer>
