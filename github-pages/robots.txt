@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yuriusvento.github.io/News/sitemap.xml
+Sitemap: https://yuriusvento.github.io/News/news-sitemap.xml
