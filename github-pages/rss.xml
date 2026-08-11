@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daily Priority</title>
+    <link>https://yuriusvento.github.io/News/</link>
+    <description>Пять значимых новостей дня: факты, контекст и прямые ссылки на источники.</description>
+    <language>ru</language>
+    <atom:link href="https://yuriusvento.github.io/News/rss.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Mon, 10 Aug 2026 11:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Пять важных событий — 10 августа 2026</title>
+      <link>https://yuriusvento.github.io/News/issues/2026-08-10/</link>
+      <guid isPermaLink="true">https://yuriusvento.github.io/News/issues/2026-08-10/</guid>
+      <pubDate>Mon, 10 Aug 2026 11:00:00 GMT</pubDate>
+      <description>AI-кино, коллективный интеллект, AI-телевидение, парапланеризм в Бразилии и главное в августовском небе.</description>
+    </item>
+  </channel>
+</rss>
